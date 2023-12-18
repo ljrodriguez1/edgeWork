@@ -35,8 +35,9 @@ export default async function Form() {
         <label htmlFor="description">Todo Description</label>
         <button type="submit">Submit</button>
       </form>
-
-      <button onClick={syncDb}>Sync</button>
+      <form action={syncDb}>
+        <button type="submit">Sync</button>
+      </form>
     </>
   );
 }
